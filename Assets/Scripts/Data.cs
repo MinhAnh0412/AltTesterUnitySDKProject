@@ -19,6 +19,7 @@ public class Data : MonoBehaviour
             Debug.Log("Instance is already exist");
             Destroy(Instance);
         }
+        DontDestroyOnLoad(Instance);
     }
 
 }

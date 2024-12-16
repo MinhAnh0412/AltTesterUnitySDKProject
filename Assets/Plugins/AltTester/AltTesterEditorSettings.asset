@@ -20,41 +20,42 @@ MonoBehaviour:
   - _selected: 0
     _testName: D:/Game_Projects/TestingProject/TestingProject/Library/ScriptAssemblies/AltTester.AltTesterUnitySDK.Editor.dll
     _testAssembly: AltTester.AltTesterUnitySDK.Editor
-    _status: 0
+    _status: -1
     _isSuite: 1
     _type: NUnit.Framework.Internal.TestAssembly
     _parentName: 
     _testCaseCount: 1
-    _foldOut: 0
+    _foldOut: 1
     _testResultMessage: 
     _testStackTrace: 
     _testDuration: 0
     path: 
-    _testSelectedCount: 0
+    _testSelectedCount: 1
   - _selected: 0
     _testName: AltTestLogin
     _testAssembly: AltTester.AltTesterUnitySDK.Editor
-    _status: 0
+    _status: -1
     _isSuite: 1
     _type: NUnit.Framework.Internal.TestFixture
     _parentName: D:/Game_Projects/TestingProject/TestingProject/Library/ScriptAssemblies/AltTester.AltTesterUnitySDK.Editor.dll
     _testCaseCount: 1
-    _foldOut: 0
+    _foldOut: 1
     _testResultMessage: 
     _testStackTrace: 
     _testDuration: 0
     path: 
-    _testSelectedCount: 0
-  - _selected: 0
-    _testName: AltTestLogin.Test
+    _testSelectedCount: 1
+  - _selected: 1
+    _testName: AltTestLogin.TestValidUserLogin
     _testAssembly: AltTester.AltTesterUnitySDK.Editor
-    _status: 0
+    _status: -1
     _isSuite: 0
     _type: NUnit.Framework.Internal.TestMethod
     _parentName: AltTestLogin
     _testCaseCount: 1
-    _foldOut: 0
-    _testResultMessage: 
+    _foldOut: 1
+    _testResultMessage: 'OneTimeSetUp: AltTester.AltTesterUnitySDK.Driver.ConnectionTimeoutException
+      : Failed to connect to AltTester(R) Server on host: 127.0.0.1 port: 13000.'
     _testStackTrace: 
     _testDuration: 0
     path: Assets/AltTester/Editor/Scripts/AltTesterEditor/Test/AltTestLogin.cs
@@ -138,7 +139,7 @@ MonoBehaviour:
     _buildIndex: 1
   platform: 2
   StandaloneTarget: 19
-  RanInEditor: 0
+  RanInEditor: 1
   ScenePathDisplayed: 0
   BuildLocationPath: D:/Game_Projects/Build/Testing
   createXMLReport: 0

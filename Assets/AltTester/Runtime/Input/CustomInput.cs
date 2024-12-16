@@ -1409,7 +1409,7 @@ using UnityEngine;
 namespace AltTester.AltTesterUnitySDK.InputModuletest
 {
 
-    public class Input : MonoBehaviour
+    public class CustomInput : MonoBehaviour
     {
 
     }

@@ -707,7 +707,7 @@ PlayerSettings:
   webGLDecompressionFallback: 0
   scriptingDefineSymbols:
     Android: 
-    Standalone: 
+    Standalone: ALTTESTER
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}
