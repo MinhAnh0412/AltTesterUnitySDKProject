@@ -20,45 +20,126 @@ MonoBehaviour:
   - _selected: 0
     _testName: D:/Game_Projects/TestingProject/TestingProject/Library/ScriptAssemblies/AltTester.AltTesterUnitySDK.Editor.dll
     _testAssembly: AltTester.AltTesterUnitySDK.Editor
-    _status: -1
+    _status: 0
     _isSuite: 1
     _type: NUnit.Framework.Internal.TestAssembly
     _parentName: 
-    _testCaseCount: 1
-    _foldOut: 1
+    _testCaseCount: 6
+    _foldOut: 0
     _testResultMessage: 
     _testStackTrace: 
     _testDuration: 0
     path: 
-    _testSelectedCount: 1
+    _testSelectedCount: 0
   - _selected: 0
     _testName: AltTestLogin
     _testAssembly: AltTester.AltTesterUnitySDK.Editor
-    _status: -1
+    _status: 1
     _isSuite: 1
     _type: NUnit.Framework.Internal.TestFixture
     _parentName: D:/Game_Projects/TestingProject/TestingProject/Library/ScriptAssemblies/AltTester.AltTesterUnitySDK.Editor.dll
-    _testCaseCount: 1
-    _foldOut: 1
+    _testCaseCount: 6
+    _foldOut: 0
     _testResultMessage: 
     _testStackTrace: 
     _testDuration: 0
     path: 
-    _testSelectedCount: 1
-  - _selected: 1
-    _testName: AltTestLogin.TestValidUserLogin
+    _testSelectedCount: 0
+  - _selected: 0
+    _testName: AltTestLogin.TestInvaildPassword
     _testAssembly: AltTester.AltTesterUnitySDK.Editor
-    _status: -1
+    _status: 1
     _isSuite: 0
     _type: NUnit.Framework.Internal.TestMethod
     _parentName: AltTestLogin
     _testCaseCount: 1
-    _foldOut: 1
-    _testResultMessage: 'OneTimeSetUp: AltTester.AltTesterUnitySDK.Driver.ConnectionTimeoutException
-      : Failed to connect to AltTester(R) Server on host: 127.0.0.1 port: 13000.'
-    _testStackTrace: 
-    _testDuration: 0
-    path: Assets/AltTester/Editor/Scripts/AltTesterEditor/Test/AltTestLogin.cs
+    _foldOut: 0
+    _testResultMessage: Test Invalid password successfull
+    _testStackTrace: 'at AltTestLogin.TestInvaildPassword () [0x000ee] in D:\Game_Projects\TestingProject\TestingProject\Assets\AltTester\Editor\Scripts\AltTesterEditor\AltTestLogin.cs:92
+
+'
+    _testDuration: 0.44366
+    path: Assets/AltTester/Editor/Scripts/AltTesterEditor/AltTestLogin.cs
+    _testSelectedCount: 0
+  - _selected: 0
+    _testName: AltTestLogin.TestInvaildUsername
+    _testAssembly: AltTester.AltTesterUnitySDK.Editor
+    _status: 1
+    _isSuite: 0
+    _type: NUnit.Framework.Internal.TestMethod
+    _parentName: AltTestLogin
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: Test Invalid username successfull
+    _testStackTrace: 'at AltTestLogin.TestInvaildUsername () [0x000d7] in D:\Game_Projects\TestingProject\TestingProject\Assets\AltTester\Editor\Scripts\AltTesterEditor\AltTestLogin.cs:68
+
+'
+    _testDuration: 0.386509
+    path: Assets/AltTester/Editor/Scripts/AltTesterEditor/AltTestLogin.cs
+    _testSelectedCount: 0
+  - _selected: 0
+    _testName: AltTestLogin.TestNullPassword
+    _testAssembly: AltTester.AltTesterUnitySDK.Editor
+    _status: 1
+    _isSuite: 0
+    _type: NUnit.Framework.Internal.TestMethod
+    _parentName: AltTestLogin
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: Test null User Login successfull
+    _testStackTrace: 'at AltTestLogin.TestNullPassword () [0x000d3] in D:\Game_Projects\TestingProject\TestingProject\Assets\AltTester\Editor\Scripts\AltTesterEditor\AltTestLogin.cs:156
+
+'
+    _testDuration: 0.3135247
+    path: Assets/AltTester/Editor/Scripts/AltTesterEditor/AltTestLogin.cs
+    _testSelectedCount: 0
+  - _selected: 0
+    _testName: AltTestLogin.TestNullUsername
+    _testAssembly: AltTester.AltTesterUnitySDK.Editor
+    _status: 1
+    _isSuite: 0
+    _type: NUnit.Framework.Internal.TestMethod
+    _parentName: AltTestLogin
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: Test null User Login successfull
+    _testStackTrace: 'at AltTestLogin.TestNullUsername () [0x000d3] in D:\Game_Projects\TestingProject\TestingProject\Assets\AltTester\Editor\Scripts\AltTesterEditor\AltTestLogin.cs:134
+
+'
+    _testDuration: 0.2828047
+    path: Assets/AltTester/Editor/Scripts/AltTesterEditor/AltTestLogin.cs
+    _testSelectedCount: 0
+  - _selected: 0
+    _testName: AltTestLogin.TestNullUsernamePassword
+    _testAssembly: AltTester.AltTesterUnitySDK.Editor
+    _status: 1
+    _isSuite: 0
+    _type: NUnit.Framework.Internal.TestMethod
+    _parentName: AltTestLogin
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: Test null User Login successfull
+    _testStackTrace: 'at AltTestLogin.TestNullUsernamePassword () [0x000b8] in D:\Game_Projects\TestingProject\TestingProject\Assets\AltTester\Editor\Scripts\AltTesterEditor\AltTestLogin.cs:112
+
+'
+    _testDuration: 0.2519658
+    path: Assets/AltTester/Editor/Scripts/AltTesterEditor/AltTestLogin.cs
+    _testSelectedCount: 0
+  - _selected: 0
+    _testName: AltTestLogin.TestValidUserLogin
+    _testAssembly: AltTester.AltTesterUnitySDK.Editor
+    _status: 1
+    _isSuite: 0
+    _type: NUnit.Framework.Internal.TestMethod
+    _parentName: AltTestLogin
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: Test Valid User Login successfull
+    _testStackTrace: 'at AltTestLogin.TestValidUserLogin () [0x000f8] in D:\Game_Projects\TestingProject\TestingProject\Assets\AltTester\Editor\Scripts\AltTesterEditor\AltTestLogin.cs:45
+
+'
+    _testDuration: 0.4984746
+    path: Assets/AltTester/Editor/Scripts/AltTesterEditor/AltTestLogin.cs
     _testSelectedCount: 0
   - _selected: 1
     _testName: D:/Game_Projects/TestingProject/TestingProject/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll
@@ -138,10 +219,10 @@ MonoBehaviour:
     _path: Assets/Scenes/HomePage.unity
     _buildIndex: 1
   platform: 2
-  StandaloneTarget: 19
+  StandaloneTarget: 5
   RanInEditor: 1
   ScenePathDisplayed: 0
-  BuildLocationPath: D:/Game_Projects/Build/Testing
+  BuildLocationPath: D:/Game_Projects/Build
   createXMLReport: 0
   xMLFilePath: 
   AltServerPort: 13000

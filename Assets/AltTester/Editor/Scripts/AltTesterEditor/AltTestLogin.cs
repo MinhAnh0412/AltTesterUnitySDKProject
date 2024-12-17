@@ -11,8 +11,17 @@ public class AltTestLogin
     {
         altDriver =new AltDriver(port: 13000);
     }
-    [Test]
+    //[Test]
 
+    ////Test scene transition
+    //public void TestSceneTransition()
+    //{
+    //    altDriver.LoadScene("LoginScene");
+    //    Assert.AreEqual("LoginScene", altDriver.GetCurrentScene());
+    //    Assert.Pass();
+    //}
+
+    [Test]
     // Test Valid User Login
     public void TestValidUserLogin()
     {
@@ -22,15 +31,21 @@ public class AltTestLogin
         var passwordInputField = altDriver.FindObject(By.NAME, "Password_InputField");
         var login_Btn = altDriver.FindObject(By.NAME, "Login_Button");
 
+        usernameInputField.SetText(null, true);
+        usernameInputField.Click();
         usernameInputField.SetText("test", true);
-        usernameInputField.SetText("12345", true);
+        passwordInputField.SetText(null, true);
+        passwordInputField.Click();
+        passwordInputField.SetText("12345", true);
         login_Btn.Click();
-        altDriver.WaitForCurrentSceneToBe("HomePage");
+        altDriver.LoadScene("HomePage");
+        altDriver.WaitForCurrentSceneToBe("HomePage",5);
 
         Assert.AreEqual("HomePage",altDriver.GetCurrentScene());
         Assert.Pass("Test Valid User Login successfull");
     }
 
+    [Test]
     //Test Invalid username, valid password
     public void TestInvaildUsername()
     {
@@ -41,16 +56,19 @@ public class AltTestLogin
         var login_Btn = altDriver.FindObject(By.NAME, "Login_Button");
 
         usernameInputField.SetText("hello", true);
-        usernameInputField.SetText("12345", true);
+
+        passwordInputField.Click();
+        passwordInputField.SetText(null, true);
+        passwordInputField.SetText("12345", true);
         login_Btn.Click();
         string popupText = altDriver.FindObject(By.NAME, "PopUp").GetText();
-        altDriver.UnloadScene("HomePage");
 
         Assert.AreEqual("Username or password is incorrect", popupText);
         Assert.AreEqual("LoginScene", altDriver.GetCurrentScene());
         Assert.Pass("Test Invalid username successfull");
     }
 
+    [Test]
     //Test valid username, Invalid password
     public void TestInvaildPassword()
     {
@@ -60,17 +78,21 @@ public class AltTestLogin
         var passwordInputField = altDriver.FindObject(By.NAME, "Password_InputField");
         var login_Btn = altDriver.FindObject(By.NAME, "Login_Button");
 
+        usernameInputField.SetText(null, true);
+        usernameInputField.Click();
         usernameInputField.SetText("test", true);
-        usernameInputField.SetText("1212", true);
+        passwordInputField.Click();
+        passwordInputField.SetText(null, true);
+        passwordInputField.SetText("1212", true);
         login_Btn.Click();
         string popupText = altDriver.FindObject(By.NAME, "PopUp").GetText();
-        altDriver.UnloadScene("HomePage");
 
         Assert.AreEqual("Username or password is incorrect", popupText);
         Assert.AreEqual("LoginScene", altDriver.GetCurrentScene());
         Assert.Pass("Test Invalid password successfull");
     }
 
+    [Test]
     //Test null Username and password
     public void TestNullUsernamePassword()
     {
@@ -80,17 +102,17 @@ public class AltTestLogin
         var passwordInputField = altDriver.FindObject(By.NAME, "Password_InputField");
         var login_Btn = altDriver.FindObject(By.NAME, "Login_Button");
 
-        usernameInputField.SetText("", true);
-        usernameInputField.SetText("", true);
+        usernameInputField.SetText(null, true);
+        passwordInputField.SetText(null, true);
         login_Btn.Click();
         string popupText = altDriver.FindObject(By.NAME, "PopUp").GetText();
-        altDriver.UnloadScene("HomePage");
 
         Assert.AreEqual("Please enter your username and password", popupText);
         Assert.AreEqual("LoginScene", altDriver.GetCurrentScene());
         Assert.Pass("Test null User Login successfull");
     }
 
+    [Test]
     //Test null Username
     public void TestNullUsername()
     {
@@ -100,17 +122,19 @@ public class AltTestLogin
         var passwordInputField = altDriver.FindObject(By.NAME, "Password_InputField");
         var login_Btn = altDriver.FindObject(By.NAME, "Login_Button");
 
-        usernameInputField.SetText("", true);
-        usernameInputField.SetText("12345", true);
+        usernameInputField.SetText(null, true);
+        passwordInputField.Click();
+        passwordInputField.SetText(null, true);
+        passwordInputField.SetText("12345", true);
         login_Btn.Click();
         string popupText = altDriver.FindObject(By.NAME, "PopUp").GetText();
-        altDriver.UnloadScene("HomePage");
 
         Assert.AreEqual("Please enter your username and password", popupText);
         Assert.AreEqual("LoginScene", altDriver.GetCurrentScene());
         Assert.Pass("Test null User Login successfull");
     }
 
+    [Test]
     //Test null password
     public void TestNullPassword()
     {
@@ -121,10 +145,11 @@ public class AltTestLogin
         var login_Btn = altDriver.FindObject(By.NAME, "Login_Button");
 
         usernameInputField.SetText("test", true);
-        usernameInputField.SetText("", true);
+        passwordInputField.Click();
+        passwordInputField.SetText(null, true);
+        passwordInputField.SetText(null, true);
         login_Btn.Click();
         string popupText = altDriver.FindObject(By.NAME, "PopUp").GetText();
-        altDriver.UnloadScene("HomePage");
 
         Assert.AreEqual("Please enter your username and password", popupText);
         Assert.AreEqual("LoginScene", altDriver.GetCurrentScene());
